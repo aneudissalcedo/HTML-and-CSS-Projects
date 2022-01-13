@@ -1,0 +1,17 @@
+/* This is how you represent a comment in CSS */
+p {
+    color: indigo;
+    background-color: aquamarine;
+    font-weight: italic;
+    font-size: 120px;
+    text-align: center;
+    text-shadow: 4px 4px 7px purple;
+}
+
+
+
+
+
+
+
+

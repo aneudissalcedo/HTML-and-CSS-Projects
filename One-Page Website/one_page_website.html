@@ -3,6 +3,7 @@
     <head>
         <title>Ragnarok Online Classes</title>
         <meta charset="utf-8">
+        <script src="JavaScript/one_page_website.js" defer></script>
         <link rel="stylesheet" type="text/css" href="CSS/one_page_website.css">
     </head>
     <body>
@@ -39,7 +40,9 @@
                     <!-- PHOTO-CONTAINER 1-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_1.png" alt="class 1">
+                            <img src="Images\Thumb\thumbnail_1.png" 
+                                onclick="openModal();currentSlide(1)" 
+                                alt="Novice" class="hover-shadow">
                             <div>
                                 <h3>Novice</h3>
                                 <p>The Novice is the starting class for all human characters in 
@@ -54,7 +57,9 @@
                     <!-- PHOTO-CONTAINER 2-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_2.png" alt="class 2">
+                            <img src="Images\Thumb\thumbnail_2.png" 
+                                onclick="openModal();currentSlide(2)" 
+                                alt="Swordman" class="hover-shadow">
                             <div>
                                 <h3>Swordman</h3>
                                 <p>Swordmen are honest and as stubborn as the strong waves of the 
@@ -69,7 +74,9 @@
                     <!-- PHOTO-CONTAINER 3-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_3.png" alt="class 3">
+                            <img src="Images\Thumb\thumbnail_3.png" 
+                                onclick="openModal();currentSlide(3)" 
+                                alt="Mage" class="hover-shadow">
                             <div>
                                 <h3>Mage</h3>
                                 <p>Mages rely on their skills as their main source of damage, and such 
@@ -84,7 +91,9 @@
                     <!-- PHOTO-CONTAINER 4-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_4.png" alt="class 4">
+                            <img src="Images\Thumb\thumbnail_4.png"
+                                onclick="openModal();currentSlide(4)" 
+                                alt="Archer" class="hover-shadow">
                             <div>
                                 <h3>Archer</h3>
                                 <p>Archers are experts at long-range combat with Bows and Arrows.<br>
@@ -99,7 +108,9 @@
                     <!-- PHOTO-CONTAINER 5-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_5.png" alt="class 5">
+                            <img src="Images\Thumb\thumbnail_5.png"
+                                onclick="openModal();currentSlide(5)" 
+                                alt="Merchant" class="hover-shadow">
                             <div>
                                 <h3>Merchant</h3>
                                 <p>Always on the lookout for profit, Merchants are the economic experts 
@@ -114,7 +125,9 @@
                     <!-- PHOTO-CONTAINER 6-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_6.png" alt="class 6">
+                            <img src="Images\Thumb\thumbnail_6.png"
+                                onclick="openModal();currentSlide(6)" 
+                                alt="Thief" class="hover-shadow">
                             <div>
                                 <h3>Thief</h3>
                                 <p>Waiting in the shadows, planning where they'll strike next, 
@@ -129,7 +142,9 @@
                     <!-- PHOTO-CONTAINER 7-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="Images\Thumb\thumbnail_7.png" alt="class 7">
+                            <img src="Images\Thumb\thumbnail_7.png"
+                                onclick="openModal();currentSlide(7)" 
+                                alt="Acolyte" class="hover-shadow">
                             <div>
                                 <h3>Acolyte</h3>
                                 <p>Acolytes live their lives serving the Catholic Church and following 
@@ -145,6 +160,97 @@
             </div>
         </section>
         <!-- END GALLERY -->
+
+        <!-- MODAL/LIGHTBOX -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="Images/Thumb/thumbnail_1.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="Images/Thumb/thumbnail_2.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="Images/Thumb/thumbnail_3.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="Images/Thumb/thumbnail_4.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="Images/Thumb/thumbnail_5.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="Images/Thumb/thumbnail_6.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="Images/Thumb/thumbnail_7.png">
+                </div>
+
+                <!-- NEXT/PREVIOUS CONTROLS -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- END NEXT/PREVIOUS CONTROLS -->
+
+                <!-- CAPTION TEXT -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <!-- END CAPTION TEXT -->
+
+                <!-- THUMBNAIL-IMAGE CONTROLS -->
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_1.png" 
+                        onclick="currentSlide(1)" alt="Novice">
+                </div>
+
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_2.png" 
+                        onclick="currentSlide(2)" alt="Swordsman">
+                </div>
+
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_3.png" 
+                        onclick="currentSlide(3)" alt="Mage">
+                </div>
+
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_4.png" 
+                        onclick="currentSlide(4)" alt="Archer">
+                </div>
+
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_5.png" 
+                        onclick="currentSlide(5)" alt="Merchant">
+                </div>
+
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_6.png" 
+                        onclick="currentSlide(6)" alt="Thief">
+                </div>
+
+                <div class="column">
+                    <img class="myModalFunction" src="Images/Thumb/thumbnail_7.png" 
+                        onclick="currentSlide(7)" alt="Acolyte">
+                </div>
+                <!-- END THUMBNAIL-IMAGE CONTROLS -->
+            </div>
+        </div>
+        <!-- END MODAL/LIGHTBOX -->
 
         <!-- FAV-CLASS -->
         <section id="fav-class">

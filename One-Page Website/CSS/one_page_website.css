@@ -353,6 +353,177 @@ iframe{
     text-align: right;
 }
 
+/*------------------
+    Modal/Lightbox
+  ------------------*/
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+  
+.modal-content {
+    position: relative;
+    background-color: rgba(100, 65, 0, 0.3);
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    max-width: 1200px;
+}
+  
+.close {
+    color: #333;
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.mySlides {
+    display: none;
+}
+
+/* Resize the images to adjust to the center */
+.mySlides img{
+    width: 375px;
+    height: 448px;
+    margin-left: 30%;
+}
+
+div .column {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
+
+.column img {
+    width: 200px;
+    height: 209px;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(100, 65, 0, 0.3);
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.caption-container {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+  
+img.myModalFunction {
+    opacity: 0.6;
+}
+  
+.active, .myModalFunction:hover {
+    opacity: 1;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
